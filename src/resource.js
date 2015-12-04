@@ -4,6 +4,7 @@ var res = {
 		btn_white_matte9 : "res/btn_white_matte.9.png",
 		btn_blue_matte9 : "res/btn_blue_matte.9.png",
 		HelloWorld_png : "res/HelloWorld.png",
+		MainMenuScene_json : "res/MainMenuScene.json",
 		MainScene_json : "res/MainScene.json"
 };
 
@@ -13,11 +14,12 @@ for (var i in res) {
 }
 
 var scripts = [
+    "MainMenuScene.js",
     "HelloWorldLayer.js",
     "MainLayer.js"
 ];
 
 cc.loader.loadJs("src", scripts , function(err){
-	if(err) return console.log("load failed");
+	if(err) return cc.log("load failed");
 	//success
 });

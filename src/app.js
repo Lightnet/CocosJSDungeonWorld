@@ -36,13 +36,34 @@ var LoadingScene = cc.Scene.extend({
 	}
 });
 */
+
+var scene_mainscreen;
+var scene_mainmenu;
+
+var scene_partymenu;
+
+var scene_shopmenu;
+var scene_npcmenu;
+var scene_questmenu;
+
+var scene_dungeonmenu;
+var scene_dungeonmap;
+var scene_settings;
+
 var AppScene = cc.Scene.extend({
 	onEnter:function () {
 		this._super();
 		//var layer = new LoadingScreenLayer();
-		var layer = new MainLayer();
-		layer.init();
-		this.addChild(layer);
+		//var layer = new MainLayer();
+		//layer.init();
+		//this.addChild(layer);
+		
+		if(scene_mainscreen != null){
+			cc.director.runScene(scene_mainscreen);
+		}else{
+			scene_mainscreen = new MainMenuScene();
+			cc.director.runScene(scene_mainscreen);
+		}
 	}
 });
 

@@ -84,7 +84,8 @@ cc.game.onStart = function(){
 		cc.log("loading...");
 		//cc.director.runScene( Loading);
 		//cc.director.runScene(new LoadingScene());
-		cc.director.runScene(new AppScene());
+		var scene = new AppScene();
+		cc.director.runScene(scene);
 		
 	}, this);
 	
