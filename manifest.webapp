@@ -1,7 +1,7 @@
 {
   "version": "1.0",
-  "name": "HelloJavascript",
-  "description": "HelloJavascript",
+  "name": "Dungeon World",
+  "description": "Creating Dungeon World with RPG element as well Player exploring.",
   "launch_path": "/index.html",
   "icons": {
     "128": "/res/icon.png"

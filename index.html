@@ -21,9 +21,31 @@
     </style>
 </head>
 <body style="padding:0; margin: 0; background: #000;">
-<script src="res/loading.js"></script>
 <canvas id="gameCanvas" width="480" height="720"></canvas>
 <script src="frameworks/cocos2d-html5/CCBoot.js"></script>
+<script>
+/*
+window.addEventListener('DOMContentLoaded', function () {
+    var s = document.createElement('script');
+    if (cc.SingleEngineFile && !cc.engineDir) {
+        s.src = cc.SingleEngineFile;
+    }
+    else if (cc.engineDir && !cc.SingleEngineFile) {
+        s.src = c.engineDir + 'res/loading.js';
+        console.log(s.src);
+    }
+    else {
+        //alert('You must specify either the single engine file OR the engine directory in "cocos2d.js"');
+    }
+    document.ccConfig = cc;
+    s.id = 'cocos2d-html5';
+    document.body.appendChild(s);
+});
+*/
+</script>
+
+<script src="res/loading.js"></script>
+
 <script cocos src="main.js"></script>
 </body>
 </html>
